@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!--Start breadcrumb area-->
+<section class="breadcrumb-area">
+    <div class="container text-center">
+        <h1>Contact Us</h1>
+    </div>
+</section>
+<!--End breadcrumb area-->
+
+<!--Start breadcrumb bottom area-->
+<section class="breadcrumb-botton-area">
+    <div class="container">
+        <div class="left">
+            <ul>
+                <li><a href="index-2.html">Home</a></li>
+                <li><i class="fa fa-caret-right" aria-hidden="true"></i></li>
+                <li class="active">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End breadcrumb bottom area-->
+
+<!--Start contact area-->
+<section class="contact-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contact-info">
+                    <div class="title">
+                        <h2>Quick Contact</h2>
+                    </div>
+                    <div class="accordion-box">
+                        <!--Start single accordion box-->
+                        <div class="accordion accordion-block">
+                            <div class="active">
+                                <h4>Headquarters</h4>
+                            </div>
+                            <div class="accord-content collapsed">
+                                <ul class="contact-info-list">
+                                    <li>
+                                        <div class="icon-holder">
+                                            <span class="flaticon-pin"></span>
+                                        </div>
+                                        <div class="text-holder">
+                                            <h5><span>Morar Gwalior, Madhya Pradesh</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-holder">
+                                            <span class="flaticon-technology"></span>
+                                        </div>
+                                        <div class="text-holder">
+                                            <h5><span>Call Us</span><br></h5>
+                                            <a href="tel:7974138039">7974138039</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-holder">
+                                            <span class="flaticon-interface"></span>
+                                        </div>
+                                        <div class="text-holder">
+                                            <h5><span>Mail Us</span><br><a
+                                                    href="mailto:sainikenterprises2025@gmail.com">sainikenterprises2025@gmail.com</a>
+                                            </h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-holder">
+                                            <span class="flaticon-clock"></span>
+                                        </div>
+                                        <div class="text-holder">
+                                            <h5><span>Opening Time</span><br>Mon - Saturday 9.00am to 06.00pm</h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--End single accordion box-->
+                        <!--Start single accordion box-->
+                        <!-- <div class="accordion accordion-block">
+                            <div class="accord-btn"><h4>Support Centre</h4></div>
+                            <div class="accord-content">
+                                <ul class="contact-info-list">
+                                    <li>
+                                        <div class="icon-holder">
+                                            <span class="flaticon-pin"></span>
+                                        </div>
+                                        <div class="text-holder">
+                                            <h5><span>226, Breaking Street,</span><br> 2nd cros, Newyork ,USA 1002</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-holder">
+                                            <span class="flaticon-technology"></span>
+                                        </div>
+                                        <div class="text-holder">
+                                            <h5><span>Call Us</span><br>+321 4567 89 012 &amp; 79 023</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-holder">
+                                            <span class="flaticon-interface"></span>
+                                        </div>
+                                        <div class="text-holder">
+                                            <h5><span>Mail Us</span><br>sainikenterprises2025@gmail.com</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-holder">
+                                            <span class="flaticon-clock"></span>
+                                        </div>
+                                        <div class="text-holder">
+                                            <h5><span>Opening Time</span><br>Mon - Sat: 09.00am to 18.00pm</h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!--End single accordion box-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="contact-form">
+                    <div class="title">
+                        <h2>Send Message Us</h2>
+                    </div>
+                    <form id="contact-form" name="contact_form" class="default-form"
+                        action="https://st.ourhtmldemo.com/new/Aircare/inc/sendmail.php" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="form_name" value="" placeholder="Your Name*" required="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="form_email" value="" placeholder="Your Mail*" required="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="form_phone" value="" placeholder="Phone">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="form_subject" value="" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea name="form_message" placeholder="Your Message.." required=""></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden"
+                                    value="">
+                                <button class="thm-btn bg-1" type="submit" data-loading-text="Please wait...">send
+                                    message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End contact area-->
+
+<!--Start Google map area-->
+<!-- <section class="google-map-area">
+    <div 
+        class="google-map" 
+        id="contact-google-map" 
+        data-map-lat="44.529688" 
+        data-map-lng="-72.933009" 
+        data-icon-path="images/resources/map-marker.png" 
+        data-map-title="Brooklyn, New York, United Kingdom" 
+        data-map-zoom="12" 
+        data-markers='{
+            "marker-1": [44.529688, -72.933009, "<h4>Head Office</h4><p>44/108 Brooklyn, UK</p>"],
+            "marker-2": [44.231172, -76.485954, "<h4>Branch Office</h4><p>4/99 Alabama, USA</p>"]
+        }'>
+
+    </div>
+</section> -->
+<!--End Google map area-->
+<!--Start footer area-->
+{% endblock %}
